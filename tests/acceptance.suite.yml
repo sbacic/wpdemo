@@ -1,0 +1,23 @@
+# Codeception Test Suite Configuration
+
+# suite for acceptance tests.
+# perform tests in browser using the WebDriver or PhpBrowser.
+# If you need both WebDriver and PHPBrowser tests - create a separate suite.
+
+class_name: AcceptanceTester
+modules:
+    enabled:
+        - PhpBrowser
+        - AcceptanceHelper
+        - Db
+        - Asserts
+    config:
+        PhpBrowser:
+            url: 'http://localhost/wp-single/'
+        Db:
+            dsn: 'mysql:host=localhost;dbname=wpdemo'
+            user: 'root'
+            password: ''
+            dump: 'tests/_data/wpdemo.sql'
+            populate: true
+            cleanup: true
