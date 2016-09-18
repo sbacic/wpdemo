@@ -1,3 +1,5 @@
+*__THIS REPO IS DEPRECATED. GET THE NEW, UPDATED VERSION [HERE](https://github.com/sbacic/wpdemo2).__*
+
 **WordpressDemo Plugin**
 
 WPDemo is a plugin for Wordpress that allows you to simultaneously demo your plugin or theme to multiple users. Each user is given his own demo instance and does not affect 
